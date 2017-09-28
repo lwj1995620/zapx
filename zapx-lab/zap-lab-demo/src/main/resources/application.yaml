@@ -1,0 +1,14 @@
+swagger:
+  title: zapx 接口文档
+  description: 测试接口文档
+  version: 1.0.0
+  #全局操作参数
+  global-operation-parameters:
+    - { name: access_token, description: user access token, modelRef: string, parameterType: header, required: true }
+    - { name: timestamp, description: access timestamp, modelRef: string, parameterType: header, required: true }
+#  base-path: /**
+  exclude-path:
+    - /error
+    - /users/**
+server:
+  port: 9090
