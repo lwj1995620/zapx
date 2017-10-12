@@ -27,10 +27,6 @@ import static org.zapx.lab.demo.mvc.model.message.ResponseMessage.ok;
 })
 public class DemoMvcController {
 
-    public static void main(String[] args) {
-        SpringApplication.run(DemoMvcController.class);
-    }
-
     @ApiOperation(value = "获取用户信息")
 
     @GetMapping("/getUser")
